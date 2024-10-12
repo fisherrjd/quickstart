@@ -1,0 +1,9 @@
+:6969
+bind 0.0.0.0
+route /*  {
+        reverse_proxy localhost:3000
+}
+handle_path /api/* {
+        reverse_proxy localhost:8000
+}
+
